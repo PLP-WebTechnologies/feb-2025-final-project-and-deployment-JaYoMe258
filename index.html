@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">MyBlog</h1>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#recent-posts">Posts</a></li>
+                    <li><a href="#newsletter">Subscribe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to My Blog</h2>
+            <p>Sharing thoughts on technology, design, and life</p>
+            <a href="#recent-posts" class="btn">Read Latest Posts</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <div class="container">
+            <!-- Featured Post -->
+            <article class="featured-post">
+                <img src="images/featured.jpg" alt="Featured post image" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Technology</span>
+                    <h3>Understanding Modern Web Development</h3>
+                    <p class="post-excerpt">Exploring the latest trends and tools in web development that every developer should know about...</p>
+                    <a href="posts/post1.html" class="read-more">Continue Reading</a>
+                </div>
+            </article>
+
+            <!-- Recent Posts Section -->
+            <section id="recent-posts" class="recent-posts">
+                <h2>Recent Posts</h2>
+                <div class="posts-grid">
+                    <!-- Post 1 -->
+                    <article class="post-card">
+                        <img src="images/post1.jpg" alt="Post 1 image" class="post-image">
+                        <div class="post-content">
+                            <span class="post-category">Design</span>
+                            <h3>Principles of Minimalist Design</h3>
+                            <p class="post-meta">Published on <time datetime="2023-05-15">May 15, 2025</time></p>
+                            <p class="post-excerpt">How simplicity can lead to better user experiences and more effective communication...</p>
+                            <a href="posts/post1.html" class="read-more">Read Post</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="post-card">
+                        <img src="images/post2.jpg" alt="Post 2 image" class="post-image">
+                        <div class="post-content">
+                            <span class="post-category">Life</span>
+                            <h3>Finding Work-Life Balance</h3>
+                            <p class="post-meta">Published on <time datetime="2023-04-28">April 28, 2025</time></p>
+                            <p class="post-excerpt">Strategies for maintaining productivity while keeping your mental health in check...</p>
+                            <a href="posts/post2.html" class="read-more">Read Post</a>
+                        </div>
+                    </article>
+                </div>
+                <a href="#" class="view-all">View All Posts</a>
+            </section>
+
+            <!-- Newsletter Section -->
+            <section id="newsletter" class="newsletter">
+                <h2>Subscribe to Newsletter</h2>
+                <form id="subscribe-form" class="newsletter-form">
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                    <p class="form-message" id="form-message"></p>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About MyBlog</h3>
+                    <p>Sharing knowledge and experiences about web development, design, and personal growth.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#recent-posts">Posts</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Snapchat"><i class="fab fa-snapchat"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 My Personal Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
